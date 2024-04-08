@@ -1,0 +1,33 @@
+name: build and deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    permissions:
+      pages: write
+      id-token: write
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: 3.x
+    - run: pip install mkdocs-material
+    - name: build
+      run: mkdocs build -d _build
+    - name: fix permissions
+      run: |
+        chmod -c -R +rX "_build/" | while read line; do
+          echo "::warning title=Invalid file permissions automatically fixed::$line"
+        done
+    - name: upload pages artifact
+      uses: actions/upload-artifact@v4
+      with:
+        path: _build
+    - name: deploy pages
+      uses: actions/deploy-pages@v4
