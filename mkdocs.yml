@@ -7,6 +7,8 @@ theme:
   name: material
   font: false
   language: zh
+  logo: logo.png
+  favicon: logo.png
   features:
     - navigation.tracking
   palette:

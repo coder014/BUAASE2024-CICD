@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# Team
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## 欢迎访问 Cocoon 团队演示页面
 
-## Commands
+了解更多信息请访问 [CSDN](https://bbs.csdn.net/topics/618200791) :smiling_face_with_3_hearts: 
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+!!! info "提示"
+    点击导航栏来查看各成员的介绍信息 :partying_face:
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+!!! warning "温馨提示"
+    成员介绍可能不是很正式 :nerd_face:
